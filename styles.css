@@ -1,0 +1,108 @@
+body {
+  height: 95vh;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.flowchartContainer {
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 47vh;
+}
+.bottomContainer {
+  display: flex;
+}
+.btmContainer1 {
+ margin-top: 20px;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 40%;
+  height: 47vh;
+}
+.btmContainer2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+}
+.txtArea{
+    box-sizing: border-box;
+    border: 1px solid;
+    width: 100%;
+    height: 22vh;
+}
+.iconTray {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin-left: 40px;
+  width: 60px;
+  height: 60px;
+}
+.employer {
+    font-size: larger;
+    cursor: pointer;
+    width: 5em;
+    display: flex;
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.editable-text {
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.inner {
+    padding: 2%;
+}
+
+#employer-btn {
+    color: green;
+    cursor: pointer;
+    font-size: large;
+    width: 5%;
+    margin: auto;
+    margin-top: 5px;
+    border-left: 1px solid black;
+    display: none;
+}
+
+.disappear {
+    display: none;
+}
+
+.appear {
+    display: block;
+}
+
+.main {
+    margin-top: 50px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+#branches {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+#branches div {
+    margin: 1px solid black;
+}
+
+.editable-text {
+    width: auto;
+}
+
+.plus-children {
+    color: blue;
+    border-left: 1px solid red
+}
