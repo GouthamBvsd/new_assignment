@@ -21,8 +21,8 @@ function generateChildren() {
   let id = "id" + Math.random().toString(16).slice(2);
   mainDiv.setAttribute("id", id);
 
-  mainDiv.addEventListener("mouseenter", enterFun);
-  mainDiv.addEventListener("mouseleave", enterLeave);
+  //   mainDiv.addEventListener("mouseenter", enterFun);
+  //   mainDiv.addEventListener("mouseleave", enterLeave);
 
   // newDiv.addEventListener('click', function(e) {
   // })
@@ -37,8 +37,33 @@ function generateChildren() {
   mainDiv.classList.add("employer");
   textDiv.classList.add("inner");
   plusDiv.classList.add("inner");
-  branches.appendChild(mainDiv);
+    branches.appendChild(mainDiv);
+    plusDiv.style.display = "none";
+  mainDiv.addEventListener("mouseenter", () => {
+    plusDiv.style.display = "block";
+  });
+  mainDiv.addEventListener("mouseleave", () => {
+      plusDiv.style.display = "none";
+  });
+    plusDiv.addEventListener("click", generateSubChildren);
 }
+function generateSubChild(id) {
+    let text = prompt("Enter text");
+    let plustext = "+";
+    const childmainDiv = document.createElement("div");
+    const textDiv = document.createElement("div");
+    const plusDiv = document.createElement("div");
+    childmainDiv.setAttribute("class", "editable-text");
+    plusDiv.setAttribute("class", "plus-children");
+    plusDiv.addEventListener("click", () => {
+      console.log("sub child clicked");
+    });
+
+    let newId = "id" + Math.random().toString(16).slice(2);
+    mainDiv.setAttribute("id", newId);
+
+}
+
 
 function enterFun() {
   btn.style.display = "block";
